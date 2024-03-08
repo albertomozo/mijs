@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario con Estilos</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: aquamarine;
+        }
+
+        fieldset {
+            width: 40%;
+            border: 4px dotted #ccc ;
+        }
+
+        .colores {
+            border-top-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+            border: 10px solid #411515 ;
+        }
+
+        
+
+        .estiloH1 {
+            width: 600px;
+            border-color: red;
+
+        }
+
+
+
+       
+
+
+        
+    </style>
+</head>
+<body>
+    <h1 class="colores estiloH1">Formulario</h1>
+
+    <form>
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="texto">Entrada de texto</label>
+            <input id="texto" name="texto" type="text" placeholder="Entrada de texto" value="">
+       
+            <legend>Correo</legend>
+            <label for="correo">Correo</label>
+            <input id="correo" name="correo" type="email" placeholder="Entrada de correo" value="">
+      
+            <legend>Entrada de Contraseña</legend>
+            <label for="pass">Entrada de contraseña</label>
+            <input id="pass" name="pass" type="password" placeholder="Entrada de contraseña" value="">
+        
+            <legend>Entrada de Textarea</legend>
+            <label for="comentario">Entrada de textarea</label>
+            <textarea id="comentario" name="comentarios">Introduce comentarios</textarea>
+      
+            <legend>Número</legend>
+            <label for="numero">Número</label>
+            <input type="number" id="numero" name="numero" value="1" min="0" max="3">
+        
+            
+            <select>
+                <option value="1">Opcion 1</option>
+                <option value="2">Opcion 2</option>
+                <option value="3">Opcion 3</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Colores (Checkbox)</legend>
+            <input type="checkbox" id="rojo"><label for="rojo">Rojo</label>
+            <input type="checkbox" id="amarillo"><label for="amarillo">Amarillo</label>
+            <input type="checkbox" id="verde"><label for="verde">Verde</label>
+        </fieldset>
+
+        <fieldset class="colores">
+            <legend>Colores (Radio)</legend>
+            <input type="radio" id="blanco" name="radio" checked><label for="blanco">Blanco</label>
+            <input type="radio" id="negro" name="radio"><label for="negro">Negro</label>
+        </fieldset>
+
+        <input type="submit" value="Enviar Formulario">
+    </form>
+
+</body>
+</html>

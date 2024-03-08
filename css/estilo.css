@@ -1,0 +1,13 @@
+
+.contenedor{
+     border :4px solid hsl(325, 65%, 50%);
+     width: 600px;
+
+}
+
+#cabecera {
+     border :3px solid hsl(263, 82%, 31%);
+     width: 600px; 
+}
+
+
